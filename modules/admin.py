@@ -49,9 +49,9 @@ class Admin(commands.Cog, name="Admin"):
         print(f"{self.bot.user} has connected to Discord!")
 
 
-def setup(bot):
+async def setup(bot):
     print("Admin Cog Loaded")
-    bot.add_cog(Admin(bot))
+    await bot.add_cog(Admin(bot))
 
 
 def teardown(bot):

@@ -25,7 +25,7 @@ class chat_gpt(commands.Cog, name="cog1"):
 
 def setup(bot):
     print("chat_gpt Cog Loaded")
-    bot.add_cog(cog1(bot))
+    bot.add_cog(chat_gpt(bot))
 
 
 def teardown(bot):
